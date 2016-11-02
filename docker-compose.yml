@@ -1,0 +1,8 @@
+version: "2"
+services:
+  crawler:
+    container_name: crawler
+    build: .
+    volumes:
+      - .:/opt/crawler
+    command: /opt/crawler/main.py
